@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$string" | tr A Z | tr c e
+cat /tmp/0x02$ | tr A Z | tr c e
