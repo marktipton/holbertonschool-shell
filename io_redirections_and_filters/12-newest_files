@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -printf | tail
+find . -type f -printf | sort -n | tail -1
