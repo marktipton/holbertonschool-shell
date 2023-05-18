@@ -15,6 +15,6 @@ while [ $x -le 20 ]
 			;;
 			*)
 		esac
-		echo Best School 
+		echo $x 
 		x=$((x+1))
 	done
