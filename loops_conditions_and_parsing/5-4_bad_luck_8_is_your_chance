@@ -1,0 +1,17 @@
+#!usr/bin/env bash
+#this while loop prints 10 lines. Line 4 says bad luck, line 8 says good luck, and every other line says best school
+x=0
+while [ $x -le 10 ]
+	do
+		if [ $x -eq 4]
+		then
+			echo bad luck
+			x=$((x+1))
+		elif [ $ -eq 8 ]
+		then
+			echo good luck
+			x=$((x+1))
+		else
+			echo Best School
+		fi
+	done
