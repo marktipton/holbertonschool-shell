@@ -14,7 +14,7 @@ while [ $x -le 20 ]
 			echo bad luck from Italy
 			;;
 			*)
+				echo $x
 		esac
-		echo $x 
 		x=$((x+1))
 	done
