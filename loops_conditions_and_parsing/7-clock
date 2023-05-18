@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#this while loop creates a clock that runs for 12 hours and 59 minutes showing the hour and minute
+h=0
+m=1
+while [ $h -le 12 ] || [ $m -le 59 ]
+	do 
+		echo $h $m
+		h=$((h+1))
+		m=$((m+1))
+	done
+
