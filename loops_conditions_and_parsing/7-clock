@@ -2,10 +2,16 @@
 #this while loop creates a clock that runs for 12 hours and 59 minutes showing the hour and minute
 h=0
 m=1
-while [ $h -le 12 ] || [ $m -le 59 ]
+while [ $h -le 12 ] 
 	do 
-		echo $h $m
-		h=$((h+1))
+		echo Hour: $h
+	       while [ $m -le 59 ]
+	       	do
+	 		echo $m
 		m=$((m+1))
+		done
+		h=$((h+1))		
+
+		
 	done
 
