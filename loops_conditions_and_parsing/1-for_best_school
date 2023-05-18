@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#the line above allows me to execute commands in the bash shell. It also searches for the default version of the interpreter automatically.
+for n in {1..10}
+do
+	echo Best School
+done
