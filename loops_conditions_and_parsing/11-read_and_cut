@@ -4,7 +4,7 @@ l=(cat /etc/passwd)
 f1=$f1
 f6=$f6
 f7=$f7
-while IFS=: read -r "{$l?}" ;
+while IFS=: read -r "${l[@]}" ;
 do 
 	echo "$f1" "$f6" "$f7"
 done  

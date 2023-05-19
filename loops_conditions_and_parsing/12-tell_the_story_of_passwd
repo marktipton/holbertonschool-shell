@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
 #this script displays the contents of /etc/passwd using a while loop
+story=cat /etc/passwd
+while IFS=: read -r $story
+do
+	echo "
