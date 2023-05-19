@@ -7,10 +7,10 @@ while [ $n -le 100 ]
 		then	echo "fizzbuzz"
 			
 
-		elif	(( $n % 3 -eq 0 ))
+		elif	(( $n % 3 == 0 ))
 			
 		then	echo "fizz"
-		elif	(( $n % 5 -eq 0 ))
+		elif	(( $n % 5 == 0 ))
 		
 		then	echo "buzz"
 			
