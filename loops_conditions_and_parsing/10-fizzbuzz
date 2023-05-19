@@ -3,22 +3,20 @@
 n=1
 while [ $n -le 100 ]
 	do 
-		case $n in
-			$n % 3 -eq 0)
-			echo fizzbuzz
-			;;
-
-			$n % 3 -eq 0)
+		if 	(( $n % 3 == 0 )) && (( $n % 5 == 0 ))
+		then	echo "fizzbuzz"
 			
-			echo fizz
-			;;
-		$n % 5 -eq 0)
+
+		elif	(( $n % 3 -eq 0 ))
+			
+		then	echo "fizz"
+		elif	(( $n % 5 -eq 0 ))
 		
-			echo buzz
-			;;
-		*)
+		then	echo "buzz"
+			
+		else
 			echo $n
-			;;
-		esac
+		fi	
+		
 		n=$((n+1))
 	done
