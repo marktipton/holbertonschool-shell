@@ -3,17 +3,22 @@
 n=1
 while [ $n -le 100 ]
 	do 
-		if [ $n % 3 -eq 0 ] || [ $((n % 5 -eq 0)) ] 
-		then
+		case $n in
+			$n % 3 -eq 0)
 			echo fizzbuzz
-		elif [ $n % 3 -eq 0 ]
-		then	
+			;;
+
+			$n % 3 -eq 0)
+			
 			echo fizz
-		elif [ $((n % 5 -eq 0)) ]
-		then
+			;;
+		$n % 5 -eq 0)
+		
 			echo buzz
-		else
+			;;
+		*)
 			echo $n
-		fi
+			;;
+		esac
 		n=$((n+1))
 	done
