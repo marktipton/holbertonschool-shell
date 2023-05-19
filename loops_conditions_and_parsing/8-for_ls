@@ -3,6 +3,8 @@
 
 for f in * ;
  	do 
-		$cut -d "-" -f(2) $f
+		$cut -d "-" -f 2 $f
+		echo $f
+
 		
 	done
