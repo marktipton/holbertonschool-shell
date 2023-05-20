@@ -4,6 +4,7 @@ touch /var/run/myscript.pid
 chmod u+x /var/run/myscript.pid
 echo "#/usr/bin/env bash" > /var/run/myscript.pid
 userID=$(ps /var/run/myscript.pid)
+userID=$userID
 echo "$$" > /var/run/myscript.pid
 while true 
 do 
