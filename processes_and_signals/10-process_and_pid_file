@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 #this script does a lot of things
 touch /var/run/myscript.pid
+chmod u+x /var/run/myscript.pid
+echo "#/usr/bin/env bash" > /var/run/myscript.pid
 userID=$(ps /var/run/myscript.pid)
 echo "$$" > /var/run/myscript.pid
+while true 
+do 
+	echo "To infinity and beyond"
+	trap "echo I hate the kill command" 15
+	trap "echo Y U no love me?!" 2
+	trap "rm /var/run/myscript.pid" 3,15
+done
