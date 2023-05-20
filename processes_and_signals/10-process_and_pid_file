@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#this script does a lot of things
+touch /var/run/myscript.pid
+userID=$(ps /var/run/myscript.pid)
+echo "$$" > /var/run/myscript.pid
