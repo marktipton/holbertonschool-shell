@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 #Two seperate files?
+/etc/init.d/manage_my_process start
+jobs
 
