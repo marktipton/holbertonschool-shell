@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Two seperate files?
 m=$(manage_my_process)
-if [ $1 = start ] 
+if [ $m = start ] 
 then
 do 	
 	start $m
