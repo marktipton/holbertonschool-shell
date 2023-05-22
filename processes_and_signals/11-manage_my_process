@@ -14,7 +14,7 @@ then
 elif [ "$1" = stop ] 
 then
  
-	/etc/init.d/stop "$m"
+	exit $m
 	rm -r /var/run/my_process.pid
 	echo "$m stopped"
  
@@ -23,9 +23,9 @@ then
 elif [ "$1" = restart ] 
 then
 
-	/etc/init.d/stop "$m"
+	/.$m
 	rm -r /var/run/my_process.pid
-	/etc/init.d/start "$m"
+	exit $m
 	touch /var/run/my_process.pid
 	echo $$ > /var/run/my_process.pid
 	echo "$m restarted"
