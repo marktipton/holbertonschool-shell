@@ -8,7 +8,7 @@ userID=$userID
 trap "echo I hate the kill command" 15
 trap "echo Y U no love me?!" 2
 trap "rm -r /var/run/myscript.pid"
-trap "kill /var/run/myscript.pid"
+trap "kill $userID"
 echo "$$" > /var/run/myscript.pid
 while true 
 do 
