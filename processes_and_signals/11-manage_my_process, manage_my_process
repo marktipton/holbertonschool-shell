@@ -1,2 +1,11 @@
 #!/usr/bin/env bash
-#
+#this script indefinitely writes "I am alive!" to the file /tmp/my_process#a separate script manages the first script 
+touch manage_my_process
+chmod u+x manage_my_process
+echo "#!/usr/bin/env bash" > manage_my_process
+while true
+do
+	echo "I am alive!" > /tmp/my_process
+	sleep 2
+done
+
