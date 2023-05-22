@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Two seperate files?
 m=$(manage_my_process)
-if [ $m = start ] 
+if [ "$m" = start ] 
 then
  	
 	start $m
@@ -11,7 +11,7 @@ then
 
 
 
-elif [ $1 = stop ] 
+elif [ "$1" = stop ] 
 then
  
 	stop $m
@@ -20,7 +20,7 @@ then
  
 
 
-elif [ $1 = restart ] 
+elif [ "$1" = restart ] 
 then
 
 	stop $m
