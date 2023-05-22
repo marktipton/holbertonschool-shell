@@ -4,28 +4,28 @@ m=manage_my_process
 if [ "$1" = start ] 
 then
  	
-        ./$m
+        
 	touch /var/run/my_process.pid
 	echo $$ > /var/run/my_process.pid
 	echo "$m started"
-
+	./$m
 
 
 elif [ "$1" = stop ] 
 then
  
-	exit $m
 	rm -r /var/run/my_process.pid
 	echo "$m stopped"
- 
+ 	exit $m
 
 
 elif [ "$1" = restart ] 
 then
 
-	/.$m
+	
 	rm -r /var/run/my_process.pid
 	exit $m
+	./$m
 	touch /var/run/my_process.pid
 	echo $$ > /var/run/my_process.pid
 	echo "$m restarted"
