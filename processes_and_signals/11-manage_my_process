@@ -3,6 +3,26 @@
 p=/var/run/my_process.pid
 m=manage_my_process
 echo $1
-init start
+if [ $1 = start ]
+do 	
+	start $m
+	echo "$m started"
+done
+fi
+
+if [ $1 = stop ]
+do 
+	stop $m
+	echo "$m stopped"
+done 
+fi
+
+if [ $1 = restart ]
+do
+	restart $m
+	echo "$m restarted"
+done 
+fi
+
 jobs
 
