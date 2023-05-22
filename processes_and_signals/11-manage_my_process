@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Two seperate files?
 m=$(manage_my_process)
-if [ m = start ] 
-;then
+if [ $m = start ] 
+then
  	
 	start $m
 	touch /var/run/my_process.pid
@@ -12,7 +12,7 @@ if [ m = start ]
 
 
 elif [ $1 = stop ] 
-;then
+then
  
 	stop $m
 	rm -r /var/run/my_process.pid
@@ -21,7 +21,7 @@ elif [ $1 = stop ]
 
 
 elif [ $1 = restart ] 
-;then
+then
 
 	stop $m
 	rm -r /var/run/my_process.pid
