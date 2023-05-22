@@ -1,29 +1,36 @@
 #!/usr/bin/env bash
 #Two seperate files?
-p=/var/run/my_process.pid
-m=manage_my_process
-echo $1
+m=$(manage_my_process)
 if [ $1 = start ] 
 then
 do 	
 	start $m
+	touch /var/run/my_process.pid
+	echo $$ > /var/run/my_process.pid
 	echo "$m started"
 done
-fi
 
-if [ $1 = stop ] 
+
+elif [ $1 = stop ] 
 then
 do 
 	stop $m
+	rm -r /var/run/my_process.pid
 	echo "$m stopped"
 done 
-fi
 
-if [ $1 = restart ] 
+
+elif [ $1 = restart ] 
 then
 do
-	restart $m
+	stop $m
+	rm -r /var/run/my_process.pid
+	start $m
+	touch /var/run/my_process.pid
+	echo $$ > /var/run/my_process.pid
 	echo "$m restarted"
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
 done 
 fi
 
