@@ -3,21 +3,24 @@
 p=/var/run/my_process.pid
 m=manage_my_process
 echo $1
-if [ $1 = start ] then
+if [ $1 = start ] 
+then
 do 	
 	start $m
 	echo "$m started"
 done
 fi
 
-if [ $1 = stop ] then
+if [ $1 = stop ] 
+then
 do 
 	stop $m
 	echo "$m stopped"
 done 
 fi
 
-if [ $1 = restart ] then
+if [ $1 = restart ] 
+then
 do
 	restart $m
 	echo "$m restarted"
