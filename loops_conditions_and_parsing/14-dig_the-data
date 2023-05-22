@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #this script groups visitors by IP and HTTPS Status code and displays this data
-awk '{print $10" "$1" "$9}' | sort -nr rev apache-access.log
+awk '{print $10" "$1" "$9}' | sort -nr apache-access.log
