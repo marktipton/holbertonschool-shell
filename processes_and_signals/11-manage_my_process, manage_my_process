@@ -8,4 +8,7 @@ do
 	echo "I am alive!" > /tmp/my_process
 	sleep 2
 done
+touch 11-manage_my_process
+chmod u+x 11-manage_my_process
+echo "#!/usr/bin/env bash" > 11-manage_my_process
 
