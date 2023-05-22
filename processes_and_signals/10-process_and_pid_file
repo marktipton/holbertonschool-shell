@@ -5,6 +5,7 @@ chmod u+x /var/run/myscript.pid
 echo "#/usr/bin/env bash" > /var/run/myscript.pid
 userID=$(ps /var/run/myscript.pid)
 userID=$userID
+echo "$userID" > /var/run/myscript.pid
 trap "echo I hate the kill command" 15
 trap "echo Y U no love me?!" 2
 trap "rm -r /var/run/myscript.pid; exit" 3,15
