@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 #two seperate files?
+while true 
+do 
+	echo "I am alive!" > /tmp/my_process
+	sleep 2
+done
 
