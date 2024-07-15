@@ -112,20 +112,6 @@
 - **What does LTS mean?**
   - LTS stands for Long-Term Support, indicating a version with extended support and maintenance.
 
-## Requirements
-
-### General
-
-- **Allowed editors**: vi, vim, emacs
-- **Scripts tested on**: Ubuntu 22.04 LTS
-- **Script constraints**:
-  - Exactly two lines long (`wc -l file` should print 2)
-  - End with a new line
-  - First line should be `#!/bin/bash`
-  - Include a `README.md` file in the repo and project folder
-  - Scripts must be executable (`chmod u+x file`)
-- **Prohibited**: backticks, `&&`, `||`, `;`
-
 ## Common Commands
 
 - `cd`: Change directory
