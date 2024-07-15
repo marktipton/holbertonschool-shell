@@ -85,20 +85,6 @@
       - `-gt` : Greater than
       - `-ge` : Greater than or equal
 
-## Requirements
-
-### General
-
-- **Allowed editors**: vi, vim, emacs
-- **Scripts tested on**: Ubuntu 20.04 LTS
-- **Script constraints**:
-  - Exactly two lines long (`wc -l file` should print 2)
-  - End with a new line
-  - First line should be `#!/usr/bin/env bash`
-  - Include a `README.md` file in the project folder describing each script
-  - Scripts must be executable (`chmod u+x file`)
-  - **Prohibited**: backticks, `&&`, `||`, `;`, `sed`, `awk`
-
 ## Common Commands
 
 - `env`: Display and modify the environment
