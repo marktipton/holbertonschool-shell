@@ -51,20 +51,6 @@
   - **`passwd (5)`**: Information about the `/etc/passwd` file format.
   - **`shadow (5)`**: Information about the `/etc/shadow` file format.
 
-## Requirements
-
-### General
-
-- **Allowed editors**: vi, vim, emacs
-- **Scripts tested on**: Ubuntu 20.04 LTS
-- **Script constraints**:
-  - Exactly two lines long (`wc -l file` should print 2)
-  - End with a new line
-  - First line should be `#!/bin/bash`
-  - Include a `README.md` file in the project folder describing each script
-  - Scripts must be executable (`chmod u+x file`)
-  - **Prohibited**: backticks, `&&`, `||`, `;`, `sed`, `awk`
-
 ## Common Commands
 
 - `echo`: Display a line of text
